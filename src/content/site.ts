@@ -19,7 +19,7 @@ export const profile = {
   phone: "0425 201 895",
   linkedin: "https://www.linkedin.com/in/oliver-godwin-603833178/",
   // Optional: put a PDF in /public and set e.g. "/oliver-godwin-cv.pdf".
-  resumeUrl: "",
+  resumeUrl: "/OliverGodwin_Resume.pdf",
   availability: "Interviewing for the GTM leadership role at Cognition",
 };
 
