@@ -13,6 +13,9 @@ export default function ContactPage() {
     profile.linkedin
       ? { label: "LinkedIn", value: "View profile", href: profile.linkedin }
       : null,
+    profile.calendly
+      ? { label: "Book a call", value: "Schedule via Calendly", href: profile.calendly }
+      : null,
     { label: "Location", value: profile.location, href: null },
   ].filter((x): x is { label: string; value: string; href: string | null } => Boolean(x));
 
@@ -47,7 +50,7 @@ export default function ContactPage() {
           ))}
         </div>
 
-        <div className="mt-10">
+        <div className="mt-10 flex flex-wrap gap-4">
           <a
             href={`mailto:${profile.email}?subject=${encodeURIComponent(
               "Re: GTM leadership at " + profile.targetCompany,
@@ -56,6 +59,16 @@ export default function ContactPage() {
           >
             Email {profile.name.split(" ")[0]}
           </a>
+          {profile.calendly ? (
+            <a
+              href={profile.calendly}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-md border border-line bg-white px-6 py-3 text-sm font-semibold text-ink transition-colors hover:border-accent hover:text-accent"
+            >
+              Book a call
+            </a>
+          ) : null}
         </div>
       </Container>
     </>

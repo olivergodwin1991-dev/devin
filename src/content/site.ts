@@ -20,6 +20,9 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/oliver-godwin-603833178/",
   // Optional: put a PDF in /public and set e.g. "/oliver-godwin-cv.pdf".
   resumeUrl: "/OliverGodwin_Resume.pdf",
+  // Optional: paste your Calendly link, e.g. "https://calendly.com/oliver-godwin/intro".
+  // Leave empty ("") to hide the "Book a call" button.
+  calendly: "",
   availability: "Interviewing for the GTM leadership role at Cognition",
 };
 
