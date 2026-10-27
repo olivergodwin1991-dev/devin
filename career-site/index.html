@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Oliver Godwin · Sales Leadership, 2021–2026</title>
+  <meta name="description" content="Oliver Godwin, ANZ sales leader. Five years of performance across Dell EMC, Splunk and Datadog." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="nav" id="top">
+    <a class="brand" href="#top" aria-label="Oliver Godwin home">
+      <span class="brand-mark">OG</span><span class="brand-name">Oliver Godwin</span>
+    </a>
+    <nav aria-label="Primary">
+      <a href="#overview">Overview</a>
+      <a href="#career">Career</a>
+      <a href="#approach">Approach</a>
+      <a href="#why">Why Cognition</a>
+      <a class="nav-keep" href="about.html">About me</a>
+      <a href="https://www.linkedin.com/in/oliver-godwin-603833178/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="nav-cta" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero wrap" id="overview">
+      <h1 class="hero-title" id="hero-headline"></h1>
+      <p class="hero-sub serif" id="hero-summary"></p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#career">Explore 2021–2026 <span aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="Oliver-Godwin-CV.pdf" download>Download CV <span aria-hidden="true">↓</span></a>
+        <a class="btn btn-ghost" href="#contact">Get in touch</a>
+      </div>
+      <dl class="stats" id="hero-stats"></dl>
+    </section>
+
+    <section class="trajectory wrap" aria-labelledby="traj-title">
+      <div class="section-head">
+        <p class="eyebrow mono">00 · Trajectory</p>
+        <h2 id="traj-title">Five years, one direction</h2>
+        <p class="muted serif">Attainment by year. Click a year to open the detail.</p>
+      </div>
+      <div class="traj-chart" id="traj-chart" role="list"></div>
+    </section>
+
+    <section class="career dark" id="career" aria-labelledby="career-title">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow mono">01 · Career explorer</p>
+          <h2 id="career-title">Year by year</h2>
+        </div>
+        <div class="year-tabs" role="tablist" aria-label="Select a year" id="year-tabs"></div>
+        <article class="year-panel" id="year-panel" role="tabpanel" aria-live="polite"></article>
+        <div class="year-nav">
+          <button class="btn btn-ghost-dark" id="prev-year" type="button">← Previous</button>
+          <span class="mono muted" id="year-pos"></span>
+          <button class="btn btn-ghost-dark" id="next-year" type="button">Next →</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="approach wrap" id="approach" aria-labelledby="approach-title">
+      <div class="section-head">
+        <p class="eyebrow mono">02 · Approach</p>
+        <h2 id="approach-title">How I run a number</h2>
+      </div>
+      <div class="principles" id="principles"></div>
+      <div class="creds">
+        <div><h3 class="mono">Education</h3><ul id="education"></ul></div>
+        <div><h3 class="mono">Certifications</h3><ul id="certs"></ul></div>
+      </div>
+    </section>
+
+    <section class="why dark" id="why" aria-labelledby="why-title">
+      <div class="wrap why-grid">
+        <div class="section-head">
+          <p class="eyebrow mono">03 · Why Cognition</p>
+          <h2 id="why-title">Same buyers, the next platform shift</h2>
+        </div>
+        <div class="terminal" aria-label="Why Cognition">
+          <div class="terminal-bar"><span></span><span></span><span></span><em class="mono">session · why-cognition.md</em></div>
+          <div class="terminal-body">
+            <p class="mono prompt">&gt; devin, why should Cognition hire Oliver?</p>
+            <p class="serif" id="why-body"></p>
+            <ul class="mono checks" id="why-checks"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact wrap" id="contact" aria-labelledby="contact-title">
+      <p class="eyebrow mono">04 · Contact</p>
+      <h2 id="contact-title">Let's talk.</h2>
+      <div class="contact-links" id="contact-links"></div>
+    </section>
+  </main>
+
+  <footer class="footer wrap mono">
+    <span>© <span id="yr"></span> Oliver Godwin · Sydney</span>
+    <span class="muted">Independent personal site. Not affiliated with Cognition AI.</span>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
