@@ -221,7 +221,7 @@ section { position: relative; }
 .reveal.in { opacity: 1; transform: none; }
 
 @media (max-width: 960px) {
-  .nav nav a:not(.nav-cta) { display: none; }
+  .nav nav a:not(.nav-cta):not(.nav-keep) { display: none; }
   .stats { grid-template-columns: 1fr 1fr; }
   .stat:nth-child(2) { border-right: 0; }
   .stat:nth-child(3) { padding-left: 0; }
@@ -244,4 +244,27 @@ section { position: relative; }
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
+}
+
+/* about page */
+.about { padding-top: clamp(56px, 8vw, 110px); padding-bottom: 110px; }
+.about-grid { display: grid; grid-template-columns: minmax(240px, 320px) 1fr; gap: clamp(36px, 6vw, 88px); align-items: start; }
+.about-photo { margin: 0; position: sticky; top: 96px; }
+.about-photo img {
+  display: block; width: 100%; height: auto; aspect-ratio: 288 / 601; object-fit: cover;
+  border-radius: var(--radius); border: 1px solid var(--line); box-shadow: 0 30px 60px -30px rgba(34, 0, 255, .35);
+}
+.about-photo figcaption { font-size: 12px; color: var(--ink-2); margin-top: 12px; text-transform: uppercase; letter-spacing: .06em; }
+.about-title { font-size: clamp(38px, 5.4vw, 68px); line-height: 1.02; letter-spacing: -0.045em; max-width: 14ch; }
+.about-title em { font-family: var(--serif); font-style: italic; font-weight: 300; color: var(--accent); letter-spacing: -0.02em; }
+.about-body { margin: 32px 0 40px; max-width: 62ch; }
+.about-body p { font-size: clamp(18px, 1.7vw, 21px); line-height: 1.55; font-weight: 300; color: rgba(11, 11, 11, .8); margin: 0 0 18px; }
+.facts { margin: 0 0 40px; border-top: 1px solid var(--line); max-width: 62ch; }
+.facts > div { display: grid; grid-template-columns: 170px 1fr; gap: 16px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.facts dt { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--ink-2); padding-top: 2px; }
+.facts dd { margin: 0; font-size: 15.5px; }
+@media (max-width: 860px) {
+  .about-grid { grid-template-columns: 1fr; }
+  .about-photo { position: static; max-width: 300px; }
+  .facts > div { grid-template-columns: 1fr; gap: 4px; }
 }
