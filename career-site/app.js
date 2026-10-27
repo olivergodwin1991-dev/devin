@@ -116,7 +116,7 @@
     "Sells technical platforms to engineering leaders",
     "Built digital native, new-logo teams in ANZ",
     "Founded multiple new teams that overachieved in quick succession",
-    "Rebuilt a team of 8 (6 new) and still tracking 75%+",
+    "Rebuilt a team of 8 (6 new) and still tracking 80%+",
     "Developed talent: 4 of 6 AEs promoted",
     "152% · President's Club · Top 5 of 150 globally",
   ]

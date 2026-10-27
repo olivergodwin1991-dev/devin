@@ -158,11 +158,11 @@ window.CAREER = {
       role: "Senior Sales Manager, Emerging Enterprise",
       period: "Promoted Oct 2026 – Present",
       theme: "Rebuilt from the ground up",
-      headline: { value: "75%+", label: "Projected FY26 finish, with 6 of 8 AEs new this year" },
+      headline: { value: "80%+", label: "Projected FY26 finish, with 6 of 8 AEs new this year" },
       context:
         "Promoted to Senior Sales Manager (Emerging Enterprise). I lead eight AEs driving revenue and new-logo growth across Commercial and Emerging Enterprise in Australia and New Zealand, mostly in the digital native space.",
       metrics: [
-        { label: "Projected FY26 finish", value: "75%+", note: "A strong finish despite rebuilding almost the entire team" },
+        { label: "Projected FY26 finish", value: "80%+", note: "A strong finish despite rebuilding almost the entire team" },
         { label: "AEs new to the team in 2026", value: "6 / 8" },
         { label: "AEs promoted", value: "4 / 6" },
         { label: "Extra headcount approved, FY26", value: "+2" },
@@ -173,7 +173,7 @@ window.CAREER = {
         "4 of 6 AEs promoted, building talent that moves up through the business.",
         "Two additional headcount approved for FY26 on the strength of team performance.",
         "Rebuilt the team almost entirely from the ground up: 6 of 8 AEs are new to the team this year.",
-        "Kept performance consistent and predictable through the rebuild, tracking to a strong FY26 finish of 75%+.",
+        "Kept performance consistent and predictable through the rebuild, tracking to a strong FY26 finish of 80%+.",
         "Building scalable sales strategies to grow customer acquisition and product adoption across a diverse book of accounts.",
       ],
       skills: ["Talent development", "Team rebuild", "Multi-segment leadership", "Predictable forecasting"],
@@ -187,7 +187,7 @@ window.CAREER = {
     { year: 2023, value: 75, label: "75%", note: "New patch" },
     { year: 2024, value: 85, label: "~85%", note: "YTD at exit" },
     { year: 2025, value: 152, label: "152%", note: "Team, P-Club" },
-    { year: 2026, value: 75, label: "75%+", note: "Projected", projected: true },
+    { year: 2026, value: 80, label: "80%+", note: "Projected", projected: true },
   ],
 
   principles: [
