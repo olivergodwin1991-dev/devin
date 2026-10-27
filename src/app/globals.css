@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/*
+ * Palette adapted from Cognition AI's brand:
+ *   background  #f7f6f5 (warm off-white)
+ *   ink         #191919 (near-black)
+ *   accent      #2200ff (electric blue)
+ *   surface     #ffffff
+ */
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+
+  --color-background: #f7f6f5;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f2f5fa;
+  --color-ink: #191919;
+  --color-ink-soft: #4b4b4b;
+  --color-accent: #2200ff;
+  --color-accent-hover: #1a00cc;
+  --color-line: #e6e4e1;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-background);
+  color: var(--color-ink);
+}
